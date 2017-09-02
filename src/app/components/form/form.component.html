@@ -1,0 +1,16 @@
+<div>
+  <label>What do you want to search for?</label>
+</div>
+<div>
+  <select (change)="handleChange($event)">
+    <option value="people">Characters</option>
+    <option value="planets">Planets</option>
+    <option value="starships">Starships</option>
+    <option value="species">Species</option>
+    <option value="vehicles">Vehicles</option>
+    <option value="films">Films</option>
+  </select>
+</div>
+<app-data [data]="data"></app-data>
+<p>Showing Page {{ pageNumber }} of {{ maxPages }}</p>
+<button (click)="getPrev()" [disabled]="prevButtonDisabled">Prev</button> <button (click)="getNext()" [disabled]="nextButtonDisabled">Next</button>
