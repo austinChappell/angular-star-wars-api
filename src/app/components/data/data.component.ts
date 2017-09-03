@@ -9,11 +9,10 @@ import { FormComponent } from '../form/form.component';
 export class DataComponent implements OnInit {
   @Input() formComponet:FormComponent;
   @Input('data') data:any[];
-  constructor() {
-    // console.log('FORM COMPONENT', this.formComponent);
-  }
+  @Input('pageNumber') pageNumber:number;
+  @Input('searchTerm') searchTerm:string;
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DataService } from './services/data.service';
 import { FormComponent } from './components/form/form.component';
 import { DataComponent } from './components/data/data.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    DataComponent
+    DataComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

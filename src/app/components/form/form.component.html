@@ -11,6 +11,6 @@
     <option value="films">Films</option>
   </select>
 </div>
-<app-data [data]="data"></app-data>
+<app-data [data]="data" [pageNumber]="pageNumber" [searchTerm]="searchTerm"></app-data>
 <p>Showing Page {{ pageNumber }} of {{ maxPages }}</p>
 <button (click)="getPrev()" [disabled]="prevButtonDisabled">Prev</button> <button (click)="getNext()" [disabled]="nextButtonDisabled">Next</button>

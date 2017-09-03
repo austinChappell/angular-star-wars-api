@@ -37,6 +37,8 @@ export class FormComponent implements OnInit {
 
   handleChange(e) {
     this.searchTerm = e.target.value;
+    this.pageNumber = 1;
+    this.prevButtonDisabled = true;
     this.renderData(this.baseUrl, this.searchTerm, this.pageNumber);
   }
 
