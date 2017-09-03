@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let result of data; let i = index">
-    <a href="/{{ searchTerm }}/{{ (i + 1) + (10 * pageNumber) - 10 }}">
+    <a href="#" routerLink="/{{ searchTerm }}/{{ (i + 1) + (10 * pageNumber) - 10 }}">
       {{ result.name }}
     </a>
   </li>

@@ -13,4 +13,10 @@ export class DataService {
     });
   }
 
+  fetchDetails(category, id) {
+    return this.http.get(`https://swapi.co/api/${category}/${id}`).map((response) => {
+      return response.json();
+    })
+  }
+
 }
